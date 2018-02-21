@@ -1,0 +1,1 @@
+export const PUSH_HISTORY_ITEMS = 'PUSH_HISTORY_ITEMS';
