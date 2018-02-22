@@ -2,7 +2,7 @@ import PouchApi from '../api/PouchApi';
 import * as TYPES from '../constants/actionTypes';
 import * as MUTATIONS_TYPES from '../constants/mutationsTypes';
 
-const pouchApi = new PouchApi('http://127.0.0.1:5984/history');
+const pouchApi = new PouchApi(process.env.APP_DB_URL);
 
 const actions = {
 	[TYPES.PUT_HISTORY_ITEM](context, payload) {

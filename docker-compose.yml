@@ -7,7 +7,7 @@ services:
     ports:
       - '3003:5984'
     environment:
-      - COUCHDB_DBNAME=mydb
+      - COUCHDB_DBNAME=history
   sample-app:
     container_name: vue-calculator-app
     build:
@@ -16,7 +16,4 @@ services:
     volumes:
       - '.:/usr/src/app'
     ports:
-      - '3002:8080'
-    environment:
-      - NODE_ENV=development
-      - REACT_APP_DB_URL=http://localhost:3003/mydb
+      - '8080:8080'
