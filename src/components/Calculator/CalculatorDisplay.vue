@@ -15,9 +15,9 @@
 
 		},
 	})
-	
+
 	export default class CalculatorDisplay extends Vue {
-		get scaledStyle () {
+		get scaledStyle() {
 			const baseFontSize = 90;
 			const fontSizeUnits = 'px';
 			const baseSymbolsCount = 6;

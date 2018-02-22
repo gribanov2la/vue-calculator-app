@@ -9,6 +9,6 @@ sync(store, router);
 new Vue({
 	router,
 	store,
-  el: '#app',
+	el: '#app',
 	render: h => h(App)
 });

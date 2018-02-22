@@ -10,12 +10,12 @@
 		props: {
 			config: {
 				type: Object,
-        required: true
+				required: true
 			},
 			buttonClickCallback: {
 				type: Function,
-        required: true
-      }
+				required: true
+			}
 		},
 	})
 	export default class CalculatorButton extends Vue {
@@ -34,12 +34,12 @@
 		}
 
 		get theme() {
-		  return this.config.theme;
-    }
+			return this.config.theme;
+		}
 
-    get size() {
-      return this.config.size;
-    }
+		get size() {
+			return this.config.size;
+		}
 
 		onClickButton() {
 			this.buttonClickCallback(this.config);
@@ -76,7 +76,7 @@
 	}
 
 	.theme-orange {
-		background: rgba(252,156,23,1);
+		background: rgba(252, 156, 23, 1);
 		color: white;
 	}
 
